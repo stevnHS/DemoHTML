@@ -1,0 +1,63 @@
+@font-face {
+  font-family: myPop;
+  src: url(../Resources/Fonts/NotoSerifTC-Medium.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: myPop;
+}
+/* main */
+.main {
+  width: auto;
+}
+
+.main .details {
+  text-align: center;
+}
+.main .container {
+  background-color: bisque;
+  width: 1000px;
+  border: 3px solid blue;
+  padding: 40px;
+  margin: 15px auto;
+  border-radius: 8px;
+}
+.main figure {
+  float: inline-start;
+  width: 400px;
+  margin-right: 30px;
+}
+.main .provider {
+  font-size: small;
+  color: grey;
+}
+.main img {
+  width: 400px;
+}
+.main .summary {
+  clear: both;
+  margin: 40px 0px 0px 0px;
+}
+.main .text {
+  margin: 0px 0px 0px 0px;
+}
+/* header */
+.header {
+  height: 60px;
+}
+.header .icon {
+  float: left;
+}
+.header .logo {
+  margin-left: 45px;
+  padding: 5px;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+/* 小東西 */
+.divider {
+  margin: 10px 0px 20px 0px;
+  border: 1px solid gray;
+  width: auto;
+}
