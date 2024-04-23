@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>方塊模型</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: gray;
+      }
+      .container {
+        background-color: honeydew;
+        width: 60%;
+        margin: 20px 50px;
+        padding: 20px;
+      }
+      .content-box {
+        box-sizing: content-box;
+        padding: 5px;
+      }
+      .border-box {
+        box-sizing: border-box;
+        padding: 5px;
+      }
+
+      img {
+        width: 500px;
+        border: 3px solid red;
+        padding: 5px;
+      }
+      .img1 {
+        width: 100px;
+        float: left;
+      }
+      .img2 {
+        width: 100px;
+        float: right;
+      }
+      .clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>BoxModel 方塊模型</h1>
+    <h2>Box-sizing: {content-box | border-box}</h2>
+    <div class="container">
+      <h3>(預設)content-box</h3>
+      <img
+        class="content-box"
+        src="/Resources/Images/電腦.jpg"
+        alt="示範 content-box"
+      />
+    </div>
+    <br />
+    <div class="container">
+      <h3>border-box</h3>
+      <img
+        class="border-box"
+        src="/Resources/Images/電腦.jpg"
+        alt="示範 border-box"
+      />
+    </div>
+
+    <h2>Margin & Padding</h2>
+    <br />
+    <h2>Float</h2>
+    <div class="container">
+      <p>指定元素的寬度後，元素水平排列。</p>
+      <p>底下的段落可以找空間擠</p>
+      <img class="img1" src="/Resources/Images/電腦.jpg" />
+      <img class="img2" src="/Resources/Images/電腦.jpg" />
+      <p>Lorem ipsum</p>
+      <p class="clear">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+        recusandae voluptatem accusantium, quaerat consequuntur quisquam.
+      </p>
+    </div>
+  </body>
+</html>
