@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS的一些規則</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .list a:link {
+        text-decoration: none;
+        color: red;
+      }
+      .list a:visited {
+        color: blueviolet;
+      }
+      .list a:hover {
+        color: chartreuse;
+      }
+      .list a:active {
+        color: hotpink;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/index.html">首頁</a>
+      <a href="/Views/TextStyle/TextStyle.html">文字樣式</a>
+      <a href="#" class="current">規則</a>
+    </nav>
+
+    <h2>選取器優先順序</h2>
+    <p>id > class(建議使用) > type</p>
+    <p>inline > embedding > linking(建議使用)</p>
+    <ul class="list">
+      <li><a href="#">新聞</a></li>
+      <li><a href="#">汽車</a></li>
+      <li><a href="#">娛樂</a></li>
+    </ul>
+  </body>
+</html>
